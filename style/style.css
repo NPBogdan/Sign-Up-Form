@@ -4,6 +4,7 @@
 	font-family: BogdanFont;
 	src:url("./oyster/Oyster.otf");
 }
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -51,4 +52,59 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+
+#app{
+	display: flex;
+	height: 100vh;
+	color: whitesmoke;
+}
+
+/* ----------------------   Wallpaper ------------------------ */
+#wallpaper{
+	background-image: url(../img.jpg);
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	justify-content: center;
+	flex:40%;
+	/* border-right:2em inset blue;
+	border-top-right-radius:2em;
+	border-bottom-right-radius:2em;
+	box-shadow: 10px 10px 10px black; */
+}
+
+#wallpaper > header {
+	text-align: center;
+	display: flex;
+	flex: 10 1 auto;
+	align-items: center;
+}
+
+#wallpaper > header > svg,
+#wallpaper > header > h1{
+	font-family: BogdanFont;
+	text-align: center;
+	font-size: 2.6em;
+	line-height: 1.4em;
+}
+
+#wallpaper > p {
+	text-align: center;
+	font-family: BogdanFont;
+	font-size: 1.2em;
+	flex: .3 1 auto;
+}
+
+#wallpaper > p > a {
+	font-family: BogdanFont;
+	text-decoration: none;
+	color: wheat;
+}
+
+
+/* ------------------------   Content   ------------------------*/
+#content{
+	flex:60%;
+	background-color: #f5deb3;
 }
