@@ -105,6 +105,28 @@ table {
 
 /* ------------------------   Content   ------------------------*/
 #content{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
 	flex:60%;
-	background-color: #f5deb3;
+	background-color: rgb(192, 207, 105);
+	padding: 3vh 5vw;
 }
+
+/*----- Content header ---- */
+.contentHeader{
+	line-height: 2em;
+	font-size:1.5em;
+	font-weight: 800;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.contentHeader > *{
+	padding-top: 1em;
+}
+
+/*----- Content form ---- */
+
