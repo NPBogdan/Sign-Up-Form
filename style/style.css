@@ -102,16 +102,21 @@ table {
 	color: wheat;
 }
 
-
 /* ------------------------   Content   ------------------------*/
+input{
+	border-color: #E5E7EB;
+}
+
 #content{
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
 	align-items: center;
 	flex:60%;
-	background-color: rgb(192, 207, 105);
-	padding: 3vh 5vw;
+	background-color: rgb(233, 233, 231);
+	font-size: 1em;
+	color:black;
+	font-weight: 800;
 }
 
 /*----- Content header ---- */
@@ -122,6 +127,8 @@ table {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	flex:1;
+	padding: 100px 50px;
 }
 
 .contentHeader > *{
@@ -130,3 +137,93 @@ table {
 
 /*----- Content form ---- */
 
+.contentForm{
+	display:flex;
+	flex-direction: column;
+	align-self:stretch;
+	flex:1 0 auto;
+	background: radial-gradient(circle, rgba(4,12,20,1) 0%, rgba(10,30,52,1) 7%, rgba(0,0,0,1) 8%, rgba(0,0,0,1) 12%, rgba(3,8,13,1) 19%, rgba(11,33,58,1) 23%, rgba(6,19,32,1) 30%, rgba(9,26,45,1) 37%, rgba(12,36,63,1) 63%, rgba(27,79,140,1) 69%, rgba(23,67,118,1) 77%, rgba(14,42,74,1) 78%, rgba(20,59,103,1) 93%);
+	padding: 20px 50px;
+	color:#E5E7EB;
+	box-shadow: 0 10px 10px rgba(6, 7, 107, 0.582);
+}
+
+#content h5{
+	font-size: 4em;
+}
+
+#contactForm{
+	display:flex;
+	flex:3 0 auto;
+	justify-content: space-evenly;
+	align-items: stretch;
+	column-gap: 200px;
+	margin-right: 600px;
+}
+
+#contactForm > div{
+	display:flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	flex: 4 1 auto;
+}
+
+#contactForm > div > div {
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 5px;
+	gap: 10px;
+	flex:1 1 auto;
+}
+
+input[type="password"]:invalid{
+	border-color:red;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  height: 35px;
+  padding: 6px;
+  margin: 0;
+  box-sizing: border-box;
+  border-radius: 50px;
+}
+
+/* ------- Content Button -------- */
+
+.contentBottom{
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	gap:30px;
+	flex:1 1 auto;
+	width: 100%;
+	padding-left: 5%;
+	padding-top: 30px;
+}
+
+#submitContainer{
+	display:flex;
+	flex-direction: column;
+	flex: 1 1 30px;
+	justify-content: center;
+}
+
+#submit{
+	flex: 0 0 50px; 
+	width: 200px;
+	background-color: #596D48;
+	color: #E5E7EB;
+	font-size: 1.5em;
+	font-weight: 1000;
+}
+
+.contentBottom > p {
+	flex:4 1 auto;
+}

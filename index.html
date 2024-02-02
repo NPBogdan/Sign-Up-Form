@@ -49,26 +49,37 @@
             </section>
 
             <section class="contentForm">
-                <h5> Formularul</h5>
-                <form action="" name="contactForm">
-                    <h5></h5>
-                    <div><label for="firstName">First Name</label><input type="text" name="firstName" id="firstName">
+                <h5>Write your data!</h5>
+                <form action="" name="contactForm" id="contactForm">
+                    <div>
+                        <div>
+                            <label for="firstName">First Name</label>
+                            <input type="text" name="firstName" id="firstName" required>
+                        </div>
+                        <div><label for="lastName">Last Name</label><input type="text" name="lastName" id="lastName">
+                        </div>
+                        <div><label for="email">Email</label><input type="email" name="email" id="email" required></div>
                     </div>
-                    <div><label for="lastName">Last Name</label><input type="text" name="lastName" id="lastName"></div>
-                    <div><label for="email">Email</label><input type="email" name="email" id="email"></div>
-                    <div><label for="phone">Phone</label><input type="tel" name="phone" id="phone"></div>
-                    <div><label for="password">Password</label><input type="password" name="password" id="password">
+                    <div>
+                        <div><label for="phone">Phone</label><input type="tel" name="phone" id="phone"></div>
+                        <div><label for="password">Password</label><input type="password" name="password" id="password" required>
+                        </div>
+                        <div id="passwordConfirmationContainer"><label for="passwordConfirmation">Password Confirmation</label><input type="password"
+                                name="passwordConfirmation" id="passwordConfirmation" required></div>
                     </div>
-                    <div><label for="passwordConfirmation">Password Confirmation</label><input type="password"
-                            name="passwordConfirmation" id="passwordConfirmation"></div>
                 </form>
             </section>
             <section class="contentBottom">
-                <button type="submit" form="contactForm">Trimite</button>
-                <p></p>
+                <div id="submitContainer">
+                    <button type="submit" form="contactForm" id="submit">Trimite</button>
+                </div>
+                <p>Already have an account? <a href="#">Log In</a></p>
             </section>
         </main>
     </div>
+
+    <script src="./style/script.js">
+    </script>
 </body>
 
 </html>
