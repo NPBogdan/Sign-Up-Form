@@ -150,6 +150,7 @@ input{
 
 #content h5{
 	font-size: 4em;
+	margin-top: 40px;
 }
 
 #contactForm{
@@ -204,7 +205,7 @@ textarea {
 	gap:30px;
 	flex:1 1 auto;
 	width: 100%;
-	padding-left: 5%;
+	
 	padding-top: 30px;
 }
 
@@ -213,6 +214,7 @@ textarea {
 	flex-direction: column;
 	flex: 1 1 30px;
 	justify-content: center;
+	padding-left: 5%;
 }
 
 #submit{
@@ -226,4 +228,5 @@ textarea {
 
 .contentBottom > p {
 	flex:4 1 auto;
+	padding-left: 5%;
 }
